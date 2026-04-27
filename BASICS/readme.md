@@ -88,3 +88,30 @@ from kiet
 leranring dsa
 
 6- lets start episode 6 tomorrow
+Why YOU should use STRING PUSHBACK instead of STRING CONCATENATION ? #shorts
+- s.push_back("sa") TC: O(1) it is better
+- s = s + "a" TC: O(size of s) ( O(s.size()))
+
+Arrays and Size Limits for Local & Global Arrays | C++ Basics 5 | CP Course | EP 6
+- segmentation fault : when you are trying to access that index that is not allocated to your array 
+- example : arr(10) and arr[11] = 1; segmentation fault
+- a means single element and a[] means a ka collection and a[][] means a[] ka collection
+
+const int N = 1e7;
+int arr[N];
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int N = 1e5;
+    int arr[N];
+
+    return 0;
+
+}
+
+- globally, we can declare array of size 1e7
+- locally, we can declare array of size 1e5 only.
+- this is because, when you declare vairable inside main, it get stored in stack and stack has limited size.
+- but when you declare the array outside the main function, then it get stored inside heap. and heap has large memory size.
