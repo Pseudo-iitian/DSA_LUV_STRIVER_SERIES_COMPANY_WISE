@@ -115,3 +115,21 @@ int main() {
 - locally, we can declare array of size 1e5 only.
 - this is because, when you declare vairable inside main, it get stored in stack and stack has limited size.
 - but when you declare the array outside the main function, then it get stored inside heap. and heap has large memory size.
+
+7- Functions, C++ references and CONTEST ALERT Information | C++ Basics - 6 | CP Course | EP 7
+- arrays are always passed by references.
+- when you need to pass 2d array in function then u have to pass the value of 2nd array i.e. arr[][20]
+- but generally we take input n, m from user and we can not do like 
+func(int n, int m , int arr[][m]){}
+- so to avoid this, we declare array globally like this
+- int N = 1e5 + 10;
+int arr[N]; now you can use without passing.
+
+8- Pointers in Deep and Easiest Way | C/C++ | Competitive Programming Course | EP 8
+- 8 bits = 1 byte
+- now each byte denotes address not bits.
+- int has 4 byte means 4 block of memory
+- int *x = 4; here x pionter pointing to first byte of int x means it will store first byte of 4 byte int data type x address.
+- bytes are added in pointer addition like for int 4 bytes are added
+- in array int a[10] here a is the pointers or contains address of a[0]
+- means a = & a[0] both are same.
