@@ -133,3 +133,5 @@ int arr[N]; now you can use without passing.
 - bytes are added in pointer addition like for int 4 bytes are added
 - in array int a[10] here a is the pointers or contains address of a[0]
 - means a = & a[0] both are same.
+
+9- 
