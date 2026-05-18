@@ -134,4 +134,33 @@ int arr[N]; now you can use without passing.
 - in array int a[10] here a is the pointers or contains address of a[0]
 - means a = & a[0] both are same.
 
-9- 
+9- GCD or HCF means highest common factors ( do factorization and highest among them {1,5} -> gcd will be 5)
+10- LCM or lowest common multiple, means multiple of a and b then do common and multply rest with column value.
+11- a* b = LCM(a,b) * HCF(a,b);
+12- formula look like
+
+int gcd(int a,int b){
+    if(a==0){
+        return b;
+    }
+    return gcd(b%a,a);
+}
+
+int lcm(int a,int b){
+    return (a*b)/gcd(a,b);
+}
+
+13- printing 3rd row pascal triangle or N row 
+void printNRowIn_nCr(int n){
+    for(int i=0;i<n;++i){
+        int val = 1;
+        for(int j=0;j<=i;++j){  
+            cout<<val<<" ";
+            val = val * (i-j) / (j+1);
+        }
+        cout<<endl;
+    }
+}
+- it is using formula i.e. nCr = nCr-1 * (n-r+1)/r 
+- here nCr-1 is previous value like 1 2 2 1 then it can be 1 previous value.
+- here above r-1 = j so r = j+1 so replacing become (i-j)/(j+1);
