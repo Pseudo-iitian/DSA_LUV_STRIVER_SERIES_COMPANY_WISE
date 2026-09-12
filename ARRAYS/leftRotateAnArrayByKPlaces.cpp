@@ -11,10 +11,12 @@ void leftRotateAnArrayByKPlaces(vector<int> &arr,int k){
     for(int i=k;i<n;++i){
         arr[i-k] = arr[i];
     }
-    int j = 0;
     for(int i=n-k;i<n;++i){
-        arr[i] = temp[j++];
+        arr[i] = temp[i-(n-k)];
     }
+
+    // tc - O(n+d)
+    // sc - O(d)
 }
 
 int main() {
