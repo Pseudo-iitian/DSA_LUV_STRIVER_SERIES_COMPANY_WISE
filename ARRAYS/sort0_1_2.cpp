@@ -20,6 +20,12 @@ void sortColors(vector<int>& nums) {
             mid++;
         }
     }
+
+    // tc - O(n) and sc - O(1)
+    // 0 to low - 1 = 0s
+    // low to mid - 1 = 1s
+    // mid to high = unosorted
+    // high + 1 to n - 1 = 2s
 }
 
 void sortColors2(vector<int>& nums) {
